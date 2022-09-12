@@ -1,0 +1,55 @@
+<div class="container">
+    <h1>Student Information</h1>
+    <div id="info">
+        <p><strong>Name :</strong>Pranav Zagade</p>
+        <p><strong>Place :</strong>Karad</p>
+    </div>
+    <button mat-raised-button color="primary" (click)="getData()">Get Timetable</button>
+    <br><br>
+
+    <!-- <div> id: {{myarr[0].id}} | Day: {{myarr[0].Day}} | Period: {{myarr[0].period}} | Subject: {{myarr[0].subject}}</div>
+<div> id: {{myarr[1].id}} | Day: {{myarr[1].Day}} | Period: {{myarr[1].period}} | Subject: {{myarr[1].subject}}</div>
+<div> id: {{myarr[2].id}} | Day: {{myarr[2].Day}} | Period: {{myarr[2].period}} | Subject: {{myarr[2].subject}}</div>
+<div> id: {{myarr[3].id}} | Day: {{myarr[3].Day}} | Period: {{myarr[3].period}} | Subject: {{myarr[3].subject}}</div>
+<div> id: {{myarr[4].id}} | Day: {{myarr[4].Day}} | Period: {{myarr[4].period}} | Subject: {{myarr[4].subject}}</div> -->
+
+    <table *ngIf = "isShown">
+        <tr>
+            <th>id</th>
+            <th>Day</th>
+            <th>Period</th>
+            <th>Subject</th>
+        </tr>
+        <tr>
+            <td>{{myarr[0].id}}</td>
+            <td>{{myarr[0].Day}}</td>
+            <td>{{myarr[0].period}}</td>
+            <td>{{myarr[0].subject}}</td>
+        </tr>
+        <tr>
+            <td>{{myarr[1].id}}</td>
+            <td>{{myarr[1].Day}}</td>
+            <td>{{myarr[1].period}}</td>
+            <td>{{myarr[2].subject}}</td>
+        </tr>
+        <tr>
+            <td>{{myarr[2].id}}</td>
+            <td>{{myarr[2].Day}}</td>
+            <td>{{myarr[2].period}}</td>
+            <td>{{myarr[2].subject}}</td>
+        </tr>
+        <tr>
+            <td>{{myarr[3].id}}</td>
+            <td>{{myarr[3].Day}}</td>
+            <td>{{myarr[3].period}}</td>
+            <td>{{myarr[3].subject}}</td>
+        </tr>
+        <tr>
+            <td>{{myarr[4].id}}</td>
+            <td>{{myarr[4].Day}}</td>
+            <td>{{myarr[4].period}}</td>
+            <td>{{myarr[4].subject}}</td>
+        </tr>
+
+    </table>
+</div>
